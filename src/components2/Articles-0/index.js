@@ -30,7 +30,7 @@ export default function BlogZero() {
     <article>
     <div >
     {post.map(e =>{
-      if(e.id === 0){
+      if(e.id === 1){
         return(<div className={styles.mainDiv} key={e.id}>
           <h2 className={styles.header}>{e.title}</h2>
         </div>)
@@ -41,7 +41,7 @@ export default function BlogZero() {
       </div>
       <div >
         {post.map((e)=>{
-          if(e.id === 0){
+          if(e.id === 1){
             return(<div className={styles.paraDiv} key={e.id}>
               {e.paragraphs.map(e=>
               <div key={e.id}>
@@ -56,7 +56,7 @@ export default function BlogZero() {
       </div>
       <div>
         {post.map((e)=>{
-          if(e.id === 0){
+          if(e.id === 1){
             return(<div className={styles.post} key={e.id}>
               {e.comments.map(e=>
               <ListItem key={e.id} name={e.name} comment={e.text}/>
