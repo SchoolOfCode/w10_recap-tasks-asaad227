@@ -1,0 +1,8 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-style: oblique;
+    font-weight: bold;
+   padding: 20px 10px 20px 10px;
+}

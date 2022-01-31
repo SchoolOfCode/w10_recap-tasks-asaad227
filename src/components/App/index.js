@@ -1,11 +1,13 @@
+import React, {useState} from "react";
 import "./App.css";
 import articles from "../../libs/articles";
 
 function App() {
+  const [post, setPost] = useState(articles)
   return (
     <main className="App">
       <h1>WikiPigeon</h1>
-      {articles.map((article) => {
+      {post.map((article) => {
         return (
           <article key={article.id} className="post">
             <h2>{article.title}</h2>

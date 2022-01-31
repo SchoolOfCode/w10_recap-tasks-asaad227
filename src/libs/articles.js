@@ -1,5 +1,4 @@
-const articles = [
-  {
+const articles = [{
     id: 0,
     title: "Pigeon Facts",
     paragraphs: [
